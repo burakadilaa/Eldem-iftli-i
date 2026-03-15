@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Eldem Çiftliği</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4f4f4;
+color:#333;
+}
+
+header{
+background:#2e6b3f;
+color:white;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h1{
+font-size:26px;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+height:500px;
+background:url("https://images.unsplash.com/photo-1542838132-92c53300491e") center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+text-shadow:2px 2px 6px black;
+}
+
+.hero h2{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 26px;
+background:#ffd000;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:6px;
+margin:10px;
+}
+
+.banner{
+background:#ffd000;
+text-align:center;
+padding:10px;
+font-weight:bold;
+}
+
+.section{
+padding:60px 10%;
+text-align:center;
+}
+
+.features{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.feature{
+background:white;
+padding:25px;
+width:250px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.15);
+}
+
+.products{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:40px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+width:260px;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 0 10px rgba(0,0,0,0.15);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card-body{
+padding:20px;
+}
+
+.reviews{
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.review{
+background:white;
+padding:20px;
+width:260px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.15);
+}
+
+.map{
+margin-top:40px;
+}
+
+.contact{
+background:#2e6b3f;
+color:white;
+}
+
+footer{
+background:#1c1c1c;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* floating whatsapp */
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+/* instagram */
+
+.instagram{
+display:inline-block;
+background:#E1306C;
+color:white;
+padding:12px 20px;
+border-radius:6px;
+text-decoration:none;
+margin-top:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Eldem Çiftliği</h1>
+
+<nav>
+<a href="#">Ana Sayfa</a>
+<a href="#urunler">Ürünler</a>
+<a href="#yorumlar">Yorumlar</a>
+<a href="#iletisim">İletişim</a>
+</nav>
+
+</header>
+
+<div class="banner">
+İstanbul içi günlük kargo ve dağıtım yapılmaktadır
+</div>
+
+<section class="hero">
+
+<h2>Doğal Gezen Tavuk Yumurtası</h2>
+
+<p>Çiftliğimizden sofranıza günlük taze ürünler</p>
+
+<div>
+
+<a class="btn" href="https://wa.me/905528558085">WhatsApp Sipariş</a> <a class="btn" href="tel:05528558085">Hemen Ara</a>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Neden Eldem Çiftliği?</h2>
+
+<div class="features">
+
+<div class="feature">
+
+<h3>🐔 Gezen Tavuk</h3>
+
+<p>
+Tavuklarımız doğal ortamda serbest şekilde dolaşır.
+Bu sayede yumurtalarımız daha sağlıklı ve doğal olur.
+</p>
+
+</div>
+
+<div class="feature">
+
+<h3>🌿 Doğal Yem</h3>
+
+<p>
+Katkı maddesi içermeyen doğal yemler ile beslenirler.
+Bu da yumurtaların besin değerini artırır.
+</p>
+
+</div>
+
+<div class="feature">
+
+<h3>🚚 Günlük Dağıtım</h3>
+
+<p>
+İstanbul içi siparişlerde günlük kargo ve dağıtım yapılır.
+Ürünler en kısa sürede size ulaşır.
+</p>
+
+</div>
+
+<div class="feature">
+
+<h3>🥚 Günlük Taze</h3>
+
+<p>
+Yumurtalarımız her gün toplanır ve bekletilmeden
+müşterilerimize ulaştırılır.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="urunler" class="section">
+
+<h2>Ürünlerimiz</h2>
+
+<div class="products">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1607305387299-a3d9611cd469">
+
+<div class="card-body">
+
+<h3>15'li Gezen Tavuk Yumurtası</h3>
+
+<p>Doğal gezen tavuk yumurtası</p>
+
+<p><b>Fiyat: İletişime Geçin</b></p>
+
+<a class="btn" href="https://wa.me/905528558085?text=15li%20yumurta%20siparişi%20vermek%20istiyorum">Sipariş Ver</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1569288063648-d7b6c1d0c6f6">
+
+<div class="card-body">
+
+<h3>30'lu Gezen Tavuk Yumurtası</h3>
+
+<p>Doğal gezen tavuk yumurtası</p>
+
+<p><b>Fiyat: İletişime Geçin</b></p>
+
+<a class="btn" href="https://wa.me/905528558085?text=30lu%20yumurta%20siparişi%20vermek%20istiyorum">Sipariş Ver</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="yorumlar" class="section">
+
+<h2>Müşteri Yorumları</h2>
+
+<div class="reviews">
+
+<div class="review">
+
+<p>
+“Gerçekten çok taze yumurtalar geliyor.
+Artık sürekli Eldem Çiftliği’nden alıyoruz.”
+</p>
+
+<b>⭐️⭐️⭐️⭐️⭐️</b>
+
+</div>
+
+<div class="review">
+
+<p>
+“İstanbul içinde hızlı teslimat yaptılar.
+Ürünler gerçekten doğal.”
+</p>
+
+<b>⭐️⭐️⭐️⭐️⭐️</b>
+
+</div>
+
+<div class="review">
+
+<p>
+“Çok memnun kaldık. Tavsiye ederim.”
+</p>
+
+<b>⭐️⭐️⭐️⭐️⭐️</b>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section map">
+
+<h2>Konumumuz</h2>
+
+<iframe
+src="https://maps.google.com/maps?q=Eldem%20%C3%87iftli%C4%9Fi%20Pendik&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="400"
+style="border:0;">
+</iframe>
+
+</section>
+
+<section id="iletisim" class="section contact">
+
+<h2>İletişim</h2>
+
+<p>Telefon: 0552 855 80 85</p>
+
+<p>WhatsApp üzerinden sipariş verebilirsiniz</p>
+
+<a class="btn" href="https://wa.me/905528558085">WhatsApp Sipariş</a>
+
+<br>
+
+<a class="instagram" href="https://instagram.com/yumurtaeld" target="_blank">
+Instagram Sayfamız
+</a>
+
+</section>
+
+<footer>
+
+<p>Eldem Çiftliği © 2026</p>
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/905528558085">
+WhatsApp
+</a>
+
+</body>
+</html>
